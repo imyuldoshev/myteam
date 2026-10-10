@@ -2,9 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Build and manage high-performing distributed teams with myteam. Find experienced global talent and get the people and support your company needs to thrive."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://myteam-indol-zeta.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="myteam" />
+    <meta
+      property="og:title"
+      content="myteam | Build high-performing distributed teams"
+    />
+    <meta
+      property="og:description"
+      content="Build and manage high-performing distributed teams with myteam. Find experienced global talent and get the people and support your company needs to thrive."
+    />
+    <meta property="og:url" content="https://myteam-indol-zeta.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://myteam-indol-zeta.vercel.app/pictures/myteam-logo.png"
+    />
+    <meta property="og:image:alt" content="myteam logo" />
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+    <meta
+      name="twitter:url"
+      content="https://myteam-indol-zeta.vercel.app/"
+    />
+    <meta
+      name="twitter:title"
+      content="myteam | Build high-performing distributed teams"
+    />
+    <meta
+      name="twitter:description"
+      content="Build and manage high-performing distributed teams with myteam. Find experienced global talent and get the people and support your company needs to thrive."
+    />
+    <meta
+      name="twitter:image"
+      content="https://myteam-indol-zeta.vercel.app/pictures/myteam-logo.png"
+    />
+    <meta name="twitter:image:alt" content="myteam logo" />
     <link rel="stylesheet" href="./style.css" />
-    <title>myteam</title>
+    <title>myteam | Build High-Performing Distributed Teams</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "myteam",
+        "url": "https://myteam-indol-zeta.vercel.app/",
+        "logo": "https://myteam-indol-zeta.vercel.app/pictures/myteam-logo.png",
+        "description": "Build and manage high-performing distributed teams with myteam. Find experienced global talent and get the people and support your company needs to thrive."
+      }
+    </script>
   </head>
   <body>
     <header class="header" id="header">
@@ -12,9 +66,9 @@
         <div class="header_container">
           <div>
             <a href="#">
-              <img src="./pictures/myteam-logo.png" alt="header logo" />
+              <img src="./pictures/myteam-logo.png" alt="myteam home" />
             </a>
-            <nav class="nav">
+            <nav class="nav" aria-label="Primary navigation">
               <ul class="nav_list">
                 <li class="nav_item">
                   <a href="#" class="nav_link"> home </a>
@@ -26,14 +80,21 @@
             </nav>
           </div>
           <a class="header_btn" href="#">contact us</a>
-          <button class="header_menu">
-            <img src="./pictures/menu.svg" alt="menu icon" />
+          <button
+            class="header_menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="mobile-navigation"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          >
+            <img src="./pictures/menu.svg" alt="" aria-hidden="true" />
           </button>
         </div>
         <div class="hero_container">
           <h1 class="hero_title">Find the best <span>talent</span></h1>
           <div class="hero_block">
-            <span></span>
+            <span aria-hidden="true"></span>
             <p class="hero_text">
               Finding the right people and building high performing teams can be
               hard. Most companies aren’t tapping into the abundance of global
@@ -42,23 +103,35 @@
           </div>
         </div>
       </div>
-      <div class="modal_wrapper">
+      <div
+        class="modal_wrapper"
+        id="mobile-navigation"
+        role="dialog"
+        aria-label="Mobile navigation"
+        aria-modal="true"
+        aria-hidden="true"
+        inert
+      >
         <div class="header_modal">
-          <ul class="modal_list">
-            <li class="modal_item">
-              <a href="#"> home </a>
-            </li>
-            <li class="modal_item">
-              <a href="#"> about </a>
-            </li>
-          </ul>
-          <button class="modal_close">
+          <nav aria-label="Mobile navigation links">
+            <ul class="modal_list">
+              <li class="modal_item">
+                <a href="#"> home </a>
+              </li>
+              <li class="modal_item">
+                <a href="#"> about </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="modal_close" type="button" aria-label="Close navigation menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
               fill="#e3e3e3"
+              aria-hidden="true"
+              focusable="false"
             >
               <path
                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
@@ -69,18 +142,18 @@
       </div>
     </header>
     <main>
-      <section class="about_section">
+      <section class="about_section" aria-labelledby="about-title">
         <div class="container about_container">
           <div class="about_intro">
-            <span class="about_rule"></span>
-            <h2 class="about_title">
+            <span class="about_rule" aria-hidden="true"></span>
+            <h2 class="about_title" id="about-title">
               Build &amp; manage distributed teams like no one else.
             </h2>
           </div>
           <ul class="about_features">
             <li class="about_feature">
               <span class="feature_icon" aria-hidden="true">
-                <img src="./pictures/card-icon1.svg" alt="card icon" />
+                <img src="./pictures/card-icon1.svg" alt="" />
               </span>
               <div>
                 <h3 class="feature_title">Experienced Individuals</h3>
@@ -92,7 +165,7 @@
             </li>
             <li class="about_feature">
               <span class="feature_icon" aria-hidden="true">
-                <img src="./pictures/card-icon2.svg" alt="card icon" />
+                <img src="./pictures/card-icon2.svg" alt="" />
               </span>
               <div>
                 <h3 class="feature_title">Easy to Implement</h3>
@@ -104,7 +177,7 @@
             </li>
             <li class="about_feature">
               <span class="feature_icon" aria-hidden="true">
-                <img src="./pictures/card-icon3.svg" alt="card icon" />
+                <img src="./pictures/card-icon3.svg" alt="" />
               </span>
               <div>
                 <h3 class="feature_title">Enhanced Productivity</h3>
